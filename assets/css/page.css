@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*-----------------------------Переменные START-----------------------------*/
+
+/*-----------------------------Переменные END-----------------------------*/
+
+.page {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.page__wrapper .article-picture__wrapper {
+    margin: 0 0 15px;
+}
+
+.page__wrapper .article-picture__container {
+    border-radius: 0px;
+}
+
+.page__wrapper .article-title__container {
+    margin: 0px auto 10px;
+}
+
+.page__wrapper .article-title__container h1 {
+    color: #121212;
+}
+
+@media (max-width: 768px) {
+    .page__wrapper .article-title__container {
+        margin: 0px auto 10px;
+    }
+}
