@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*-----------------------------Переменные START-----------------------------*/
+
+/*-----------------------------Переменные END-----------------------------*/
+
+.breadcrumbs__wrapper {
+    margin: 0 0 15px;
+}
+
+.breadcrumbs__container ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs__container li {
+    color: #4a4af3;
+}
+
+.breadcrumbs__container .icon-right:after {
+    vertical-align: middle;
+}
+
+@media (max-width: 992px) {
+    .breadcrumbs__wrapper {
+        margin: 0 0 10px;
+    }
+
+    .breadcrumbs__container li {
+        font-size: 16px;
+    }
+}
