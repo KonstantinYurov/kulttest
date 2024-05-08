@@ -1087,17 +1087,16 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: end;
     -ms-flex-pack: end;
     justify-content: end;
-}
-
-.search__wrapper {
-    margin: 0 20px 0 0;
     -webkit-justify-content: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
     -webkit-align-items: flex-end;
+}
+
+.search__wrapper {
+    margin: 0 20px 0 0;
 }
 
 .search__container .icon-search {
@@ -1154,9 +1153,12 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: end;
     -ms-flex-pack: end;
     justify-content: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
 }
 
 .search__block .search__close .icon-close:after {
@@ -1368,9 +1370,12 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: end;
     -ms-flex-pack: end;
     justify-content: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
 }
 
 .popup--login .popup__container .user-registration__close .icon-close {
@@ -1423,11 +1428,25 @@ body {
     margin: 0 0 25px;
 }
 
-.popup--login .popup__container .user-registration__agreement input {
-    width: 20px;
+.popup--login .popup__container .user-registration__agreement input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 22px;
     height: 20px;
-    -webkit-appearance: auto;
     margin: 0 15px 0 0;
+    border: 1px solid #9c9c9c;
+    overflow: hidden;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup--login .popup__container .user-registration__agreement input[type=checkbox]:checked::before {
+    content: "✔";
+    display: block;
+    text-align: center;
+    line-height: 20px;
 }
 
 .popup--login .popup__container .user-registration__agreement label {
