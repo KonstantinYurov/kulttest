@@ -1438,7 +1438,10 @@ body {
     -moz-appearance: none;
     appearance: none;
     width: 25px;
-    height: 22px;
+    height: 25px;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
     margin: 0 15px 0 0;
     border: 1px solid #9c9c9c;
     overflow: hidden;
@@ -1447,18 +1450,11 @@ body {
     cursor: pointer;
 }
 
-.popup--login .popup__container .user-registration__agreement input[type=checkbox]:checked::before {
-    content: "✔";
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 16px;
+.popup--login .popup__container .user-registration__agreement input[type=checkbox]:checked {
+    background-image: url("/assets/img/icon-checkbox.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .popup--login .popup__container .user-registration__agreement label {
