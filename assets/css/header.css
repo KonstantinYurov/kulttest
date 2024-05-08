@@ -1451,7 +1451,7 @@ body {
 }
 
 .popup--login .popup__container .user-registration__agreement input[type=checkbox]:checked {
-    background-image: url("/assets/img/icon-checkbox.svg");
+    background-image: url("../img/icon-checkbox.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
